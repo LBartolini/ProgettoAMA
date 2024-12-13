@@ -1,12 +1,12 @@
 <!DOCTYPE aseba-playground>
 <aseba-playground>
-	<author name="Stéphane Magnenat" email="stephane at magnenat dot net" />
-	
 	<description lang="en">A scenario to test the algorithm from the paper <i>Localization of inexpensive robots with low-bandwidth sensors</i>, by Wang et al., presented at DARS 2016.</description>
 	
 	<color name="white" r="1.0" g="1.0" b="1.0" />
 	
-	<world w="59" h="42" color="white" groundTexture="../data/kandinsky_comp-8_A2.png" />
+	<world w="80" h="400" color="white" groundTexture="thymio_map.jpg" />
+    <camera x="40" y="-60" yaw="1.57" pitch="-1" roll="1.57"/>
 	
-	<thymio2 x="30" y="20" port="33334" />
+	<robot type="thymio2" x="42" y="50" port="33334" angle="1.57" name="A" nodeId="1" />
+    <robot type="thymio2" x="42" y="100" port="33335" angle="1.57" name="B" nodeId="2" />
 </aseba-playground>

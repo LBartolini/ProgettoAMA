@@ -1,31 +1,231 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Thymio="http:///schemas/Thymio/_A9LYULY7Ee-2CdmdVj6Nbg/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Thymio/_A9LYULY7Ee-2CdmdVj6Nbg/4 /Thymio/Thymio.profile.uml#_A9LYUbY7Ee-2CdmdVj6Nbg">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Thymio="http:///schemas/Thymio/_H1OYwLY8Ee-2CdmdVj6Nbg/6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Thymio/_H1OYwLY8Ee-2CdmdVj6Nbg/6 /Thymio/Thymio.profile.uml#_H1O_0LY8Ee-2CdmdVj6Nbg">
   <uml:Model xmi:id="_gilZcLYzEe-2CdmdVj6Nbg" name="model">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_gjVAULYzEe-2CdmdVj6Nbg">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Class" xmi:id="_cG-UULY0Ee-2CdmdVj6Nbg" name="Thymio A"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_f5dHcLY0Ee-2CdmdVj6Nbg" name="Thymio B"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_i6nLULY0Ee-2CdmdVj6Nbg" memberEnd="_i6nyYrY0Ee-2CdmdVj6Nbg _i6oZcLY0Ee-2CdmdVj6Nbg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i6nyYLY0Ee-2CdmdVj6Nbg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i6nyYbY0Ee-2CdmdVj6Nbg" key="nature" value="UML_Nature"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZAvSIBR5EfCzBeAjFKm5BA" name="Environment">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2nND4hR9EfC1Nd4DoPmXhQ" name="road" type="_0KbfcBR9EfC1Nd4DoPmXhQ" association="_2nMc0BR9EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2nND4xR9EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2nND5BR9EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ldOA8BR5EfCzBeAjFKm5BA" name="SoS">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Xt_JcBR8EfC1Nd4DoPmXhQ" name="thymio a" type="_rNXaoBR5EfCzBeAjFKm5BA" association="_Xt8GIBR8EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xt_wgBR8EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xt_wgRR8EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_9H8pghR8EfC1Nd4DoPmXhQ" name="environment" type="_ZAvSIBR5EfCzBeAjFKm5BA" association="_9H8CcBR8EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9H9QkBR8EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9H9QkRR8EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dh_S8hR9EfC1Nd4DoPmXhQ" name="thymio b" type="_sd2yIBR5EfCzBeAjFKm5BA" association="_dh-r4BR9EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dh_S8xR9EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dh_S9BR9EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rNXaoBR5EfCzBeAjFKm5BA" name="Thymio B">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Bov7MhR9EfC1Nd4DoPmXhQ" name="class10" type="_mcDgYBR8EfC1Nd4DoPmXhQ" association="_BovUIBR9EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BowiQBR9EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BowiQRR9EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_RcxNkhR9EfC1Nd4DoPmXhQ" name="computer" type="_NqdZkBR9EfC1Nd4DoPmXhQ" association="_RcwmgBR9EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RcxNkxR9EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RcxNlBR9EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_sd2yIBR5EfCzBeAjFKm5BA" name="Thymio A">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Z4qb0BR9EfC1Nd4DoPmXhQ" name="computer" type="_UBHZoBR9EfC1Nd4DoPmXhQ" association="_Z4p0wBR9EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z4qb0RR9EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z4qb0hR9EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_amAqAhR9EfC1Nd4DoPmXhQ" name="body" type="_URD6IBR9EfC1Nd4DoPmXhQ" association="_amAC8BR9EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_amAqAxR9EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_amBREBR9EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Xt8GIBR8EfC1Nd4DoPmXhQ" memberEnd="_Xt_JcBR8EfC1Nd4DoPmXhQ _XuAXkBR8EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Xt97UBR8EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Xt-iYBR8EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_i6nyYrY0Ee-2CdmdVj6Nbg" name="thymio b" type="_f5dHcLY0Ee-2CdmdVj6Nbg" association="_i6nLULY0Ee-2CdmdVj6Nbg"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_i6oZcLY0Ee-2CdmdVj6Nbg" name="thymio a" type="_cG-UULY0Ee-2CdmdVj6Nbg" association="_i6nLULY0Ee-2CdmdVj6Nbg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_XuAXkBR8EfC1Nd4DoPmXhQ" name="sos" type="_ldOA8BR5EfCzBeAjFKm5BA" association="_Xt8GIBR8EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mcDgYBR8EfC1Nd4DoPmXhQ" name="Body">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_neA3MBR9EfC1Nd4DoPmXhQ" name="infrared sensors" type="_itAmUBR9EfC1Nd4DoPmXhQ" association="_neAQIBR9EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_neA3MRR9EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_neA3MhR9EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DIRXwhR-EfC1Nd4DoPmXhQ" name="wheels" type="_-d_Z8BR9EfC1Nd4DoPmXhQ" association="_DIQwsBR-EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DIRXwxR-EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DIRXxBR-EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_9H8CcBR8EfC1Nd4DoPmXhQ" memberEnd="_9H8pghR8EfC1Nd4DoPmXhQ _9H9QkhR8EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9H8pgBR8EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9H8pgRR8EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_9H9QkhR8EfC1Nd4DoPmXhQ" name="sos" type="_ldOA8BR5EfCzBeAjFKm5BA" association="_9H8CcBR8EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_BovUIBR9EfC1Nd4DoPmXhQ" memberEnd="_Bov7MhR9EfC1Nd4DoPmXhQ _BowiQhR9EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Bov7MBR9EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Bov7MRR9EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_BowiQhR9EfC1Nd4DoPmXhQ" name="thymio a" type="_rNXaoBR5EfCzBeAjFKm5BA" association="_BovUIBR9EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NqdZkBR9EfC1Nd4DoPmXhQ" name="Computer"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RcwmgBR9EfC1Nd4DoPmXhQ" memberEnd="_RcxNkhR9EfC1Nd4DoPmXhQ _RcxNlRR9EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RcxNkBR9EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RcxNkRR9EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RcxNlRR9EfC1Nd4DoPmXhQ" name="thymio a" type="_rNXaoBR5EfCzBeAjFKm5BA" association="_RcwmgBR9EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UBHZoBR9EfC1Nd4DoPmXhQ" name="Computer"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_URD6IBR9EfC1Nd4DoPmXhQ" name="Body">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ueJ5IhR9EfC1Nd4DoPmXhQ" name="infrared sensors" type="_rJiGsBR9EfC1Nd4DoPmXhQ" association="_ueJSEBR9EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ueJ5IxR9EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ueJ5JBR9EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IdRtkhR-EfC1Nd4DoPmXhQ" name="wheels" type="_GCUuEBR-EfC1Nd4DoPmXhQ" association="_IdRGgBR-EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IdRtkxR-EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IdRtlBR-EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Z4p0wBR9EfC1Nd4DoPmXhQ" memberEnd="_Z4qb0BR9EfC1Nd4DoPmXhQ _Z4qb0xR9EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z4p0wRR9EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Z4p0whR9EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Z4qb0xR9EfC1Nd4DoPmXhQ" name="thymio b" type="_sd2yIBR5EfCzBeAjFKm5BA" association="_Z4p0wBR9EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_amAC8BR9EfC1Nd4DoPmXhQ" memberEnd="_amAqAhR9EfC1Nd4DoPmXhQ _amBRERR9EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_amAqABR9EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_amAqARR9EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_amBRERR9EfC1Nd4DoPmXhQ" name="thymio b" type="_sd2yIBR5EfCzBeAjFKm5BA" association="_amAC8BR9EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dh-r4BR9EfC1Nd4DoPmXhQ" memberEnd="_dh_S8hR9EfC1Nd4DoPmXhQ _dh_S9RR9EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dh_S8BR9EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dh_S8RR9EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dh_S9RR9EfC1Nd4DoPmXhQ" name="sos" type="_ldOA8BR5EfCzBeAjFKm5BA" association="_dh-r4BR9EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_itAmUBR9EfC1Nd4DoPmXhQ" name="Infrared Sensors">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_p3FAUBR9EfC1Nd4DoPmXhQ" name="environment" type="_ZAvSIBR5EfCzBeAjFKm5BA" association="_p3EZQBR9EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p3FAURR9EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p3FAUhR9EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_neAQIBR9EfC1Nd4DoPmXhQ" memberEnd="_neA3MBR9EfC1Nd4DoPmXhQ _neA3MxR9EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_neAQIRR9EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_neAQIhR9EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_neA3MxR9EfC1Nd4DoPmXhQ" name="body" type="_mcDgYBR8EfC1Nd4DoPmXhQ" association="_neAQIBR9EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_p3EZQBR9EfC1Nd4DoPmXhQ" memberEnd="_p3FAUBR9EfC1Nd4DoPmXhQ _p3FAUxR9EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p3EZQRR9EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p3EZQhR9EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_p3FAUxR9EfC1Nd4DoPmXhQ" name="infrared sensors" type="_itAmUBR9EfC1Nd4DoPmXhQ" association="_p3EZQBR9EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rJiGsBR9EfC1Nd4DoPmXhQ" name="Infrared Sensors">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vgTSohR9EfC1Nd4DoPmXhQ" name="environment" type="_ZAvSIBR5EfCzBeAjFKm5BA" association="_vgSrkBR9EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vgTSoxR9EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vgTSpBR9EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ueJSEBR9EfC1Nd4DoPmXhQ" memberEnd="_ueJ5IhR9EfC1Nd4DoPmXhQ _ueKgMBR9EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ueJ5IBR9EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ueJ5IRR9EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ueKgMBR9EfC1Nd4DoPmXhQ" name="body" type="_URD6IBR9EfC1Nd4DoPmXhQ" association="_ueJSEBR9EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vgSrkBR9EfC1Nd4DoPmXhQ" memberEnd="_vgTSohR9EfC1Nd4DoPmXhQ _vgTSpRR9EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vgTSoBR9EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vgTSoRR9EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_vgTSpRR9EfC1Nd4DoPmXhQ" name="infrared sensors" type="_rJiGsBR9EfC1Nd4DoPmXhQ" association="_vgSrkBR9EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0KbfcBR9EfC1Nd4DoPmXhQ" name="Road"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2nMc0BR9EfC1Nd4DoPmXhQ" memberEnd="_2nND4hR9EfC1Nd4DoPmXhQ _2nNq8BR9EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2nND4BR9EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2nND4RR9EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2nNq8BR9EfC1Nd4DoPmXhQ" name="environment" type="_ZAvSIBR5EfCzBeAjFKm5BA" association="_2nMc0BR9EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-d_Z8BR9EfC1Nd4DoPmXhQ" name="Wheels">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ElXn4hR-EfC1Nd4DoPmXhQ" name="road" type="_0KbfcBR9EfC1Nd4DoPmXhQ" association="_ElXA0BR-EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ElXn4xR-EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ElYO8BR-EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DIQwsBR-EfC1Nd4DoPmXhQ" memberEnd="_DIRXwhR-EfC1Nd4DoPmXhQ _DIRXxRR-EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DIRXwBR-EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DIRXwRR-EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DIRXxRR-EfC1Nd4DoPmXhQ" name="body" type="_mcDgYBR8EfC1Nd4DoPmXhQ" association="_DIQwsBR-EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ElXA0BR-EfC1Nd4DoPmXhQ" memberEnd="_ElXn4hR-EfC1Nd4DoPmXhQ _ElYO8RR-EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ElXn4BR-EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ElXn4RR-EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ElYO8RR-EfC1Nd4DoPmXhQ" name="wheels" type="_-d_Z8BR9EfC1Nd4DoPmXhQ" association="_ElXA0BR-EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GCUuEBR-EfC1Nd4DoPmXhQ" name="Wheels">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KaAgAxR-EfC1Nd4DoPmXhQ" name="road" type="_0KbfcBR9EfC1Nd4DoPmXhQ" association="_KaAgABR-EfC1Nd4DoPmXhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KaBHEBR-EfC1Nd4DoPmXhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KaBHERR-EfC1Nd4DoPmXhQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IdRGgBR-EfC1Nd4DoPmXhQ" memberEnd="_IdRtkhR-EfC1Nd4DoPmXhQ _IdRtlRR-EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IdRtkBR-EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IdRtkRR-EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_IdRtlRR-EfC1Nd4DoPmXhQ" name="body" type="_URD6IBR9EfC1Nd4DoPmXhQ" association="_IdRGgBR-EfC1Nd4DoPmXhQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KaAgABR-EfC1Nd4DoPmXhQ" memberEnd="_KaAgAxR-EfC1Nd4DoPmXhQ _KaBHEhR-EfC1Nd4DoPmXhQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KaAgARR-EfC1Nd4DoPmXhQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KaAgAhR-EfC1Nd4DoPmXhQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KaBHEhR-EfC1Nd4DoPmXhQ" name="wheels" type="_GCUuEBR-EfC1Nd4DoPmXhQ" association="_KaAgABR-EfC1Nd4DoPmXhQ"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gi2fMLYzEe-2CdmdVj6Nbg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gi5igLYzEe-2CdmdVj6Nbg" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gi5igbYzEe-2CdmdVj6Nbg" key="Version" value="0.0.2"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gi5igrYzEe-2CdmdVj6Nbg" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gi5ig7YzEe-2CdmdVj6Nbg" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gi5ihLYzEe-2CdmdVj6Nbg" key="Date" value="2024-12-09"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gi5ihbYzEe-2CdmdVj6Nbg" key="Author" value=""/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fhx14BR8EfC1Nd4DoPmXhQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fhx14RR8EfC1Nd4DoPmXhQ" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fhx14hR8EfC1Nd4DoPmXhQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fhx14xR8EfC1Nd4DoPmXhQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fhx15BR8EfC1Nd4DoPmXhQ" key="Date" value="2024-12-09"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fhx15RR8EfC1Nd4DoPmXhQ" key="Author" value=""/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gi47cLYzEe-2CdmdVj6Nbg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="/Thymio/Thymio.profile.uml#_A9LYUbY7Ee-2CdmdVj6Nbg"/>
+        <references xmi:type="ecore:EPackage" href="/Thymio/Thymio.profile.uml#_H1O_0LY8Ee-2CdmdVj6Nbg"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="/Thymio/Thymio.profile.uml#_mgNgYLYxEe-KYPkVOOEAWw"/>
     </profileApplication>
   </uml:Model>
-  <Thymio:belongs_to xmi:id="_kcLrwLY0Ee-2CdmdVj6Nbg" base_Association="_i6nLULY0Ee-2CdmdVj6Nbg"/>
+  <Thymio:Environment xmi:id="_enTSABR5EfCzBeAjFKm5BA" base_Class="_ZAvSIBR5EfCzBeAjFKm5BA"/>
+  <Thymio:SoS xmi:id="_pGmicBR5EfCzBeAjFKm5BA" base_Class="_ldOA8BR5EfCzBeAjFKm5BA"/>
+  <Thymio:ConstituentSystem xmi:id="_vEvU0BR5EfCzBeAjFKm5BA" base_Class="_rNXaoBR5EfCzBeAjFKm5BA"/>
+  <Thymio:ConstituentSystem xmi:id="_v6X8UBR5EfCzBeAjFKm5BA" base_Class="_sd2yIBR5EfCzBeAjFKm5BA"/>
+  <Thymio:Integrates xmi:id="_l1i6ABR8EfC1Nd4DoPmXhQ" base_Association="_Xt8GIBR8EfC1Nd4DoPmXhQ"/>
+  <Thymio:Operatesin xmi:id="_AaxFIBR9EfC1Nd4DoPmXhQ" base_Association="_9H8CcBR8EfC1Nd4DoPmXhQ"/>
+  <Thymio:Consistof xmi:id="_JYM6MBR9EfC1Nd4DoPmXhQ" base_Association="_BovUIBR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:PhysicalSystem xmi:id="_Ktq4UBR9EfC1Nd4DoPmXhQ" base_Class="_mcDgYBR8EfC1Nd4DoPmXhQ"/>
+  <Thymio:CyberSystem xmi:id="_Pimm8BR9EfC1Nd4DoPmXhQ" base_Class="_NqdZkBR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:Consistof xmi:id="_TOEMEBR9EfC1Nd4DoPmXhQ" base_Association="_RcwmgBR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:CyberSystem xmi:id="_YH_IYBR9EfC1Nd4DoPmXhQ" base_Class="_UBHZoBR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:PhysicalSystem xmi:id="_Y7JDoBR9EfC1Nd4DoPmXhQ" base_Class="_URD6IBR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:Consistof xmi:id="_bpGesBR9EfC1Nd4DoPmXhQ" base_Association="_amAC8BR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:Consistof xmi:id="_csrbkBR9EfC1Nd4DoPmXhQ" base_Association="_Z4p0wBR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:Integrates xmi:id="_exX3MBR9EfC1Nd4DoPmXhQ" base_Association="_dh-r4BR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:RUPI xmi:id="_mtIM0BR9EfC1Nd4DoPmXhQ" base_Class="_itAmUBR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:Hasa xmi:id="_pULHkBR9EfC1Nd4DoPmXhQ" base_Association="_neAQIBR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:Acquireinformationsfrom xmi:id="_qtuUcBR9EfC1Nd4DoPmXhQ" base_Association="_p3EZQBR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:RUPI xmi:id="_tGSHQBR9EfC1Nd4DoPmXhQ" base_Class="_rJiGsBR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:Hasa xmi:id="_vIvHMBR9EfC1Nd4DoPmXhQ" base_Association="_ueJSEBR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:Acquireinformationsfrom xmi:id="_wKeRABR9EfC1Nd4DoPmXhQ" base_Association="_vgSrkBR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:Entity xmi:id="_1uDOUBR9EfC1Nd4DoPmXhQ" base_Class="_0KbfcBR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:Integrates xmi:id="_4qiNkBR9EfC1Nd4DoPmXhQ" base_Association="_2nMc0BR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:RUPI xmi:id="_CcyKwBR-EfC1Nd4DoPmXhQ" base_Class="_-d_Z8BR9EfC1Nd4DoPmXhQ"/>
+  <Thymio:Hasa xmi:id="_JR6PgBR-EfC1Nd4DoPmXhQ" base_Association="_IdRGgBR-EfC1Nd4DoPmXhQ"/>
+  <Thymio:Interactswith xmi:id="_RHxYgBR-EfC1Nd4DoPmXhQ" base_Association="_ElXA0BR-EfC1Nd4DoPmXhQ"/>
+  <Thymio:Interactswith xmi:id="_SfgngBR-EfC1Nd4DoPmXhQ" base_Association="_KaAgABR-EfC1Nd4DoPmXhQ"/>
 </xmi:XMI>

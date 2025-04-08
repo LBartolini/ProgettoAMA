@@ -37,7 +37,7 @@ if  prox.horizontal[2] > 150 and phase == 6 then
 	motor.left.target = 200
 	motor.right.target = -200
 	phase = 7
-	timer.period[0] = 325
+	timer.period[0] = 425
 	timer.period[1] = 0
 end
 
@@ -80,7 +80,7 @@ onevent timer0
 		motor.left.target = 200
 		motor.right.target = 200
 		timer.period[0] = 0
-		timer.period[1] = 5000
+		timer.period[1] = 6000
 	end
 	
 	# dopo aver completato il sorpasso, proseguo dritto per 10 secondi
@@ -120,7 +120,7 @@ onevent timer0
 		motor.left.target = 200
 		motor.right.target = 200
 		timer.period[0] = 0
-		timer.period[1] = 5000
+		timer.period[1] = 6000
 	end
 	
 	# dopo aver completato il sorpasso, proseguo dritto fino alla fine
@@ -171,7 +171,7 @@ onevent timer1
 		motor.right.target = 200
 		phase = 8
 		timer.period[1] = 0
-		timer.period[0] = 325
+		timer.period[0] = 425
 		
 	# ruoto a sinistra per rientrare sulla strada
 	elseif  phase == 8 then

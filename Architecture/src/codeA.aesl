@@ -5,16 +5,17 @@
 <!--list of global events-->
 
 
-<!--node A su marco-ubuntu - 93-->
-<node name="A su marco-ubuntu - 93" nodeId="{2b606266-8d2a-4a2b-b49b-d4c5aa4590a9}"><![CDATA[# phase 1 -> go straight
+<!--node -->
+<node name=""><![CDATA[# phase 1 -> go straight
 # phase 2 -> rotate to the right
 # phase 3 -> go straight
 # phase 4 -> rotate to the left
 # phase 5 -> go straight
-# phase 6 -> turn around
+# phase 6 -> turn around & go straight
 # phase 7 -> rotate to the right
-# phase 8 -> rotate to the left
-# phase 9 -> go straight
+# phase 8 -> go straight
+# phase 9 -> rotate to the left
+# phase 10 -> go straight to the end
 
 var phase = 1
 
@@ -23,11 +24,21 @@ motor.right.target=150
 
 onevent prox
 # Appena iniziato il sitema, quando trovo il Thymio B ruoto a destra
-if  prox.horizontal[2] > 200 and phase == 1 then
+if  prox.horizontal[2] > 170 and phase == 1 then
 	motor.left.target = 200
 	motor.right.target = -200
 	phase = 2
-	timer.period[0] = 275
+	timer.period[0] = 300
+	timer.period[1] = 0
+end
+
+# tyhmio B davanti, evito collisione sorpassando a destra
+if  prox.horizontal[2] > 150 and phase == 6 then
+	motor.left.target = 200
+	motor.right.target = -200
+	phase = 7
+	timer.period[0] = 325
+	timer.period[1] = 0
 end
 
 # arrivati in fondo alla strada, ruoto di 180°
@@ -37,6 +48,14 @@ if (prox.ground.delta[0] > 500) and (phase  == 5) then
 	phase = 6
 	timer.period[1] = 0
 	timer.period[0]=2200
+end
+
+# arrivati in fondo alla strada al termine della simulazione, mi fermo
+if (prox.ground.delta[0] > 500) and (phase  == 10) then
+	motor.left.target=0
+	motor.right.target=0
+	timer.period[1] = 0
+	timer.period[0]=0
 end
 
 onevent timer0
@@ -63,6 +82,8 @@ onevent timer0
 		timer.period[0] = 0
 		timer.period[1] = 5000
 	end
+	
+	# dopo aver completato il sorpasso, proseguo dritto per 10 secondi
 	if  phase == 5 then
 		motor.left.target = 200
 		motor.right.target = 200
@@ -70,14 +91,46 @@ onevent timer0
 		timer.period[1] = 10000 # requirement -> andare dritto per 10s
 	end
 	
-	
-	
-	if phase == 8 then
-		motor.left.target=100
-		motor.right.target=100
-		timer.period[0]=0
-		phase = 3
+	# dopo essermi girato, proseguo dritto
+	if  phase == 6 then
+		motor.left.target = 200
+		motor.right.target = 200
+		timer.period[0] = 0
+		timer.period[1] = 0 
 	end
+	
+	# dopo aver ruotato a destra, inizio il sorpasso andando in diagonale
+	if  phase == 7 then
+		motor.left.target = 200
+		motor.right.target = 200
+		timer.period[0] = 0
+		timer.period[1] = 5000
+	end
+	
+	# continuo il sorpasso andando in parallelo al Thymio B
+	if phase == 8 then
+		motor.left.target = 200
+		motor.right.target = 200
+		timer.period[0] = 0
+		timer.period[1] = 5000
+	end
+	
+	# dopo aver ruotato a sinistra, proseguo il sorpasso andando in diagonale
+	if phase == 9 then
+		motor.left.target = 200
+		motor.right.target = 200
+		timer.period[0] = 0
+		timer.period[1] = 5000
+	end
+	
+	# dopo aver completato il sorpasso, proseguo dritto fino alla fine
+	if  phase == 10 then
+		motor.left.target = 200
+		motor.right.target = 200
+		timer.period[0] = 0
+		timer.period[1] = 0
+	end
+
 
 onevent timer1
 	# dopo aver proseguito in diagonale, riaddrizzo il Thymio
@@ -86,7 +139,7 @@ onevent timer1
 		motor.right.target = 200
 		phase = 3
 		timer.period[1] = 0
-		timer.period[0] = 275
+		timer.period[0] = 300
 		
 	# ruoto a sinistra per rientrare sulla strada
 	elseif  phase == 3 then
@@ -111,6 +164,31 @@ onevent timer1
 		phase = 6
 		timer.period[1] = 0
 		timer.period[0]=2200
+	
+	# dopo aver proseguito in diagonale, riaddrizzo il Thymio
+	elseif phase == 7 then
+		motor.left.target = -200
+		motor.right.target = 200
+		phase = 8
+		timer.period[1] = 0
+		timer.period[0] = 325
+		
+	# ruoto a sinistra per rientrare sulla strada
+	elseif  phase == 8 then
+		motor.left.target = -200
+		motor.right.target = 200
+		phase = 9
+		timer.period[1] = 0
+		timer.period[0] = 275
+	
+	# ruoto a destra per riaddrizzarmi una volta finito il sorpasso
+	elseif phase == 9 then
+		motor.left.target = 200
+		motor.right.target = -200
+		phase = 10
+		timer.period[1] = 0
+		timer.period[0] = 275
+	
 	end
 
 onevent button.left

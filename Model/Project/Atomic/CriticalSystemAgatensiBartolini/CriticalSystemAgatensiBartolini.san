@@ -23,10 +23,10 @@
 				<class id="Mobius.BaseClasses.BasePanelClass">
 					<int id="ClassVersion">2</int>
 					<point id="Size of Panel">
-						<int id="x">1422</int>
-						<int id="y">834</int>
+						<int id="x">4343</int>
+						<int id="y">2548</int>
 					</point>
-					<double id="ZoomFactor">1.0</double>
+					<double id="ZoomFactor">1.25</double>
 					<boolean id="ShowGridEnabled">true</boolean>
 					<int id="ShowGridStep">10</int>
 					<boolean id="SnapGridEnabled">true</boolean>
@@ -218,15 +218,8 @@
 							</point>
 						</class>
 						<boolean id="MirrorImage">false</boolean>
-						<string id="Predicate">
-							bool a, b;\na = (Sys_F -&gt; Mark() == 1);\nb = (A_F -&gt; M
-							ark() == 1);\nreturn (a &amp;&amp; b);
-						</string>
-						<string id="Function">
-							A_F -&gt; Mark() = 0; # no need to check if there are token 
-							in A_F since it has already been checked in the input predic
-							ate\nA_W -&gt; Mark() = 1;
-						</string>
+						<string id="Predicate">return (Sys_F -&gt; Mark() == 1);</string>
+						<string id="Function">;</string>
 					</class>
 					<class id="Mobius.AtomicModels.San.InputGatePanelObject">
 						<int id="ClassVersion">1</int>
@@ -245,11 +238,10 @@
 						</class>
 						<boolean id="MirrorImage">false</boolean>
 						<string id="Predicate">
-							bool a, b, c;\na = (Sys_F -&gt; Mark() == 1);\nb = (A_F -&gt
-							;Mark() == 0);\nc = (B_F -&gt;Mark() &gt; 0);\nreturn (a &am
-							p;&amp; b &amp;&amp; c);
+							bool a, b;\na = (Sys_F -&gt; Mark() == 1);\nb = (A_F -&gt;Ma
+							rk() == 0);\nreturn (a &amp;&amp; b);
 						</string>
-						<string id="Function">B_F -&gt; Mark()--;\nB_W -&gt; Mark()++;</string>
+						<string id="Function">;</string>
 					</class>
 					<class id="Mobius.AtomicModels.San.InputGatePanelObject">
 						<int id="ClassVersion">1</int>
@@ -268,12 +260,11 @@
 						</class>
 						<boolean id="MirrorImage">false</boolean>
 						<string id="Predicate">
-							bool a, b, c, d;\na = (Sys_F -&gt; Mark() == 1);\nb = (A_F -
-							&gt;Mark() == 0);\nc = (B_F -&gt;Mark() == 0);\nd = (C_F -&g
-							t;Mark() &gt; 0);\nreturn (a &amp;&amp; b &amp;&amp; c &amp;
-							&amp; d);
+							bool a, b, c;\na = (Sys_F -&gt; Mark() == 1);\nb = (A_F -&gt
+							;Mark() == 0);\nc = (B_F -&gt;Mark() == 0);\nreturn (a &amp;
+							&amp; b &amp;&amp; c);
 						</string>
-						<string id="Function">C_F -&gt; Mark()--;\nC_W -&gt; Mark()++;</string>
+						<string id="Function">;</string>
 					</class>
 					<class id="Mobius.AtomicModels.San.InputGatePanelObject">
 						<int id="ClassVersion">1</int>
@@ -293,11 +284,10 @@
 						<boolean id="MirrorImage">false</boolean>
 						<string id="Predicate">
 							bool a, b, c, d;\na = (A_W -&gt; Mark() == 0);\nb = (B_W -&g
-							t; Mark() == 0);\nc = (C_W -&gt; Mark() == 0);\nd = (Sys_W -
-							&gt; Mark() == 1);\nreturn (d &amp;&amp; (a || (b &amp;&amp;
-							 c)));
+							t; Mark() == 0);\nc = (C_W -&gt; Mark() == 0);\nreturn (a ||
+							 (b &amp;&amp; c));
 						</string>
-						<string id="Function">Sys_W -&gt; Mark() = 0;\nSys_F -&gt; Mark() = 1;</string>
+						<string id="Function">;</string>
 					</class>
 					<class id="Mobius.AtomicModels.San.InputGatePanelObject">
 						<int id="ClassVersion">1</int>
@@ -317,11 +307,10 @@
 						<boolean id="MirrorImage">false</boolean>
 						<string id="Predicate">
 							bool a, b, c, d;\na = (A_W -&gt; Mark() == 1);\nb = (B_W -&g
-							t; Mark() &gt; 0);\nc = (C_W -&gt; Mark() &gt; 0);\nd = (Sys
-							_F -&gt; Mark() == 1)\nreturn (d &amp;&amp; (a &amp;&amp; (b
-							 || c)));
+							t; Mark() &gt; 0);\nc = (C_W -&gt; Mark() &gt; 0);\nreturn (
+							a &amp;&amp; (b || c));
 						</string>
-						<string id="Function">Sys_F -&gt; Mark() = 0;\nSys_W -&gt; Mark() = 1;</string>
+						<string id="Function">;</string>
 					</class>
 					<class id="Mobius.AtomicModels.San.OutputGatePanelObject">
 						<int id="ClassVersion">1</int>
@@ -356,8 +345,8 @@
 										<boolean id="IsLabelShown">true</boolean>
 									</class>
 									<point id="CenterPoint">
-										<int id="x">415</int>
-										<int id="y">155</int>
+										<int id="x">409</int>
+										<int id="y">149</int>
 									</point>
 								</class>
 							</class>
@@ -640,8 +629,8 @@
 						<boolean id="Arrows">true</boolean>
 						<vector id="PointList">
 							<point id="0">
-								<int id="x">413</int>
-								<int id="y">155</int>
+								<int id="x">407</int>
+								<int id="y">149</int>
 							</point>
 							<point id="1">
 								<int id="x">505</int>
@@ -838,6 +827,31 @@
 					</class>
 					<class id="Mobius.BaseClasses.BaseEdgeClass">
 						<int id="ClassVersion">3</int>
+						<int id="LineType">2</int>
+						<string id="StartVertex">A_F</string>
+						<string id="FinishVertex">B_Enabling_Repair</string>
+						<boolean id="Arrows">false</boolean>
+						<vector id="PointList">
+							<point id="0">
+								<int id="x">519</int>
+								<int id="y">194</int>
+							</point>
+							<point id="1">
+								<int id="x">670</int>
+								<int id="y">310</int>
+							</point>
+							<point id="2">
+								<int id="x">834</int>
+								<int id="y">344</int>
+							</point>
+							<point id="3">
+								<int id="x">928</int>
+								<int id="y">270</int>
+							</point>
+						</vector>
+					</class>
+					<class id="Mobius.BaseClasses.BaseEdgeClass">
+						<int id="ClassVersion">3</int>
 						<int id="LineType">0</int>
 						<string id="StartVertex">C_F</string>
 						<string id="FinishVertex">C_Enabling_Repair</string>
@@ -867,6 +881,80 @@
 							<point id="1">
 								<int id="x">1294</int>
 								<int id="y">284</int>
+							</point>
+						</vector>
+					</class>
+					<class id="Mobius.BaseClasses.BaseEdgeClass">
+						<int id="ClassVersion">3</int>
+						<int id="LineType">2</int>
+						<string id="StartVertex">B_F</string>
+						<string id="FinishVertex">C_Enabling_Repair</string>
+						<boolean id="Arrows">false</boolean>
+						<vector id="PointList">
+							<point id="0">
+								<int id="x">926</int>
+								<int id="y">211</int>
+							</point>
+							<point id="1">
+								<int id="x">1151</int>
+								<int id="y">119</int>
+							</point>
+							<point id="2">
+								<int id="x">1364</int>
+								<int id="y">174</int>
+							</point>
+							<point id="3">
+								<int id="x">1382</int>
+								<int id="y">286</int>
+							</point>
+							<point id="4">
+								<int id="x">1293</int>
+								<int id="y">282</int>
+							</point>
+						</vector>
+					</class>
+					<class id="Mobius.BaseClasses.BaseEdgeClass">
+						<int id="ClassVersion">3</int>
+						<int id="LineType">2</int>
+						<string id="StartVertex">A_F</string>
+						<string id="FinishVertex">C_Enabling_Repair</string>
+						<boolean id="Arrows">false</boolean>
+						<vector id="PointList">
+							<point id="0">
+								<int id="x">523</int>
+								<int id="y">194</int>
+							</point>
+							<point id="1">
+								<int id="x">659</int>
+								<int id="y">98</int>
+							</point>
+							<point id="2">
+								<int id="x">823</int>
+								<int id="y">80</int>
+							</point>
+							<point id="3">
+								<int id="x">1042</int>
+								<int id="y">61</int>
+							</point>
+							<point id="4">
+								<int id="x">1226</int>
+								<int id="y">75</int>
+							</point>
+							<point id="5">
+								<int id="x">1379</int>
+								<int id="y">153</int>
+							</point>
+							<point id="6">
+								<int id="x">1428</int>
+								<int id="y">235</int>
+							</point>
+							<point id="7">
+								<int id="x">1412</int>
+								<int id="y">282</int>
+							</point>
+							<point id="8">
+								<int id="x">1290</int>
+								<int id="y">283</int>
 							</point>
 						</vector>
 					</class>
@@ -992,6 +1080,23 @@
 					<class id="Mobius.BaseClasses.BaseEdgeClass">
 						<int id="ClassVersion">3</int>
 						<int id="LineType">0</int>
+						<string id="StartVertex">A_F</string>
+						<string id="FinishVertex">A_Repair_T</string>
+						<boolean id="Arrows">true</boolean>
+						<vector id="PointList">
+							<point id="0">
+								<int id="x">519</int>
+								<int id="y">190</int>
+							</point>
+							<point id="1">
+								<int id="x">407</int>
+								<int id="y">262</int>
+							</point>
+						</vector>
+					</class>
+					<class id="Mobius.BaseClasses.BaseEdgeClass">
+						<int id="ClassVersion">3</int>
+						<int id="LineType">0</int>
 						<string id="StartVertex">B_Enabling_Repair</string>
 						<string id="FinishVertex">B_Repair_T</string>
 						<boolean id="Arrows">false</boolean>
@@ -1009,6 +1114,23 @@
 					<class id="Mobius.BaseClasses.BaseEdgeClass">
 						<int id="ClassVersion">3</int>
 						<int id="LineType">0</int>
+						<string id="StartVertex">B_F</string>
+						<string id="FinishVertex">B_Repair_T</string>
+						<boolean id="Arrows">true</boolean>
+						<vector id="PointList">
+							<point id="0">
+								<int id="x">922</int>
+								<int id="y">212</int>
+							</point>
+							<point id="1">
+								<int id="x">807</int>
+								<int id="y">276</int>
+							</point>
+						</vector>
+					</class>
+					<class id="Mobius.BaseClasses.BaseEdgeClass">
+						<int id="ClassVersion">3</int>
+						<int id="LineType">0</int>
 						<string id="StartVertex">C_Enabling_Repair</string>
 						<string id="FinishVertex">C_Repair_T</string>
 						<boolean id="Arrows">false</boolean>
@@ -1020,6 +1142,23 @@
 							<point id="1">
 								<int id="x">1177</int>
 								<int id="y">287</int>
+							</point>
+						</vector>
+					</class>
+					<class id="Mobius.BaseClasses.BaseEdgeClass">
+						<int id="ClassVersion">3</int>
+						<int id="LineType">0</int>
+						<string id="StartVertex">C_F</string>
+						<string id="FinishVertex">C_Repair_T</string>
+						<boolean id="Arrows">true</boolean>
+						<vector id="PointList">
+							<point id="0">
+								<int id="x">1278</int>
+								<int id="y">203</int>
+							</point>
+							<point id="1">
+								<int id="x">1177</int>
+								<int id="y">283</int>
 							</point>
 						</vector>
 					</class>

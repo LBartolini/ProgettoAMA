@@ -1,0 +1,85 @@
+Mobius trs Version 2.5, 
+Copyright (c) William H. Sanders and Univ. of Illinois 1994-2010
+
+******************************************************************************
+                           Mobius TRANSIENT SOLVER 
+
+                          TRANSIENT SOLVER RESULTS
+******************************************************************************
+
+Started: Wed Apr 23 09:29:58 2025
+
+Project name: Project
+Study name: StudyAgatensiBartolini
+State space name: SSGAgatensiBartolini
+Experiment name: Exp1
+
+Global variable settings for this experiment:
+	lambda = 0.01
+	mu = 0.01
+
+Verbosity: 0
+Accuracy: 1.000000e-09
+Time points: 24.000000 360.000000 1080.000000 2520.000000 5400.000000 11160.000000
+Computation Time (seconds): 0.002379
+User Time (seconds): 0.002379
+System Time (seconds): -0.000000
+Rate of Poisson process: 0.042500
+Number of states in process: 35
+Number of states with reward: 22
+Number of time points: 6
+
+      Time Point       Left Trunc.      # Iterations          Error     
+   ---------------   ---------------   ---------------   ---------------
+         24.000000                 0                13      1.000000e-09
+        360.000000                 0                56      1.000000e-09
+       1080.000000                 0               115      1.000000e-09
+       2520.000000                33               212      1.000000e-09
+       5400.000000               121               381      1.000000e-09
+      11160.000000               320               692      1.000000e-09
+
+******************************************************************************
+Performance variable :  Reliability
+Time                 :  24.000000
+Mean                 :  9.416476e-01
+Variance             :  5.494744e-02
+Plot files    (pdf)  :  Exp1.trs.Reliability.24.000.pdf.splot
+              (cdf)  :  Exp1.trs.Reliability.24.000.cdf.splot
+******************************************************************************
+Performance variable :  Reliability
+Time                 :  360.000000
+Mean                 :  1.458931e-01
+Variance             :  1.246083e-01
+Plot files    (pdf)  :  Exp1.trs.Reliability.360.000.pdf.splot
+              (cdf)  :  Exp1.trs.Reliability.360.000.cdf.splot
+******************************************************************************
+Performance variable :  Reliability
+Time                 :  1080.000000
+Mean                 :  6.097830e-04
+Variance             :  6.094112e-04
+Plot files    (pdf)  :  Exp1.trs.Reliability.1080.000.pdf.splot
+              (cdf)  :  Exp1.trs.Reliability.1080.000.cdf.splot
+******************************************************************************
+Performance variable :  Reliability
+Time                 :  2520.000000
+Mean                 :  1.238414e-08
+Variance             :  1.238414e-08
+Plot files    (pdf)  :  Exp1.trs.Reliability.2520.000.pdf.splot
+              (cdf)  :  Exp1.trs.Reliability.2520.000.cdf.splot
+******************************************************************************
+Performance variable :  Reliability
+Time                 :  5400.000000
+Mean                 :  5.153514e-18
+Variance             :  5.153514e-18
+Plot files    (pdf)  :  Exp1.trs.Reliability.5400.000.pdf.splot
+              (cdf)  :  Exp1.trs.Reliability.5400.000.cdf.splot
+******************************************************************************
+Performance variable :  Reliability
+Time                 :  11160.000000
+Mean                 :  8.923523e-37
+Variance             :  8.923523e-37
+Plot files    (pdf)  :  Exp1.trs.Reliability.11160.000.pdf.splot
+              (cdf)  :  Exp1.trs.Reliability.11160.000.cdf.splot
+******************************************************************************
+Finished: Wed Apr 23 09:29:58 2025
+

@@ -182,10 +182,10 @@ public:
 class B_Repair_TActivity:public Activity {
 public:
 
-  Place* A_F;
-  short* A_F_Mobius_Mark;
   Place* B_F;
   short* B_F_Mobius_Mark;
+  Place* A_F;
+  short* A_F_Mobius_Mark;
   Place* Sys_F;
   short* Sys_F_Mobius_Mark;
   Place* B_W;
@@ -210,12 +210,12 @@ public:
 class C_Repair_TActivity:public Activity {
 public:
 
+  Place* C_F;
+  short* C_F_Mobius_Mark;
   Place* A_F;
   short* A_F_Mobius_Mark;
   Place* B_F;
   short* B_F_Mobius_Mark;
-  Place* C_F;
-  short* C_F_Mobius_Mark;
   Place* Sys_F;
   short* Sys_F_Mobius_Mark;
   Place* C_W;

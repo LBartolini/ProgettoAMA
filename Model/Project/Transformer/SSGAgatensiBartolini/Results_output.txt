@@ -1,0 +1,160 @@
+
+**********************************************************
+
+State Generation initiated on Exp1 of SSGAgatensiBartolini started at Wed Apr 23 09:29:32 UTC 2025 ...
+path=[/root/MobiusProject/Project/Transformer/SSGAgatensiBartolini/]
+License File=/tmp/mobius4337510291264574677license
+License Verified.
+The Global Variable values for experiment Experiment 1 are:
+lambda	double	0.01
+mu	double	0.01
+SSG: SetTraceLevel: 0
+
+Generated: 35 states
+Computation Time (user + system): 8.400000e-04 seconds
+State Generation of Exp1 on model SSGAgatensiBartolini finished at Wed Apr 23 09:29:33 UTC 2025.
+
+
+**********************************************************
+
+**********************************************************
+
+State Generation initiated on Exp2 of SSGAgatensiBartolini started at Wed Apr 23 09:29:33 UTC 2025 ...
+path=[/root/MobiusProject/Project/Transformer/SSGAgatensiBartolini/]
+License File=/tmp/mobius4469285467516657971license
+License Verified.
+The Global Variable values for experiment Experiment 2 are:
+lambda	double	0.01
+mu	double	0.001
+SSG: SetTraceLevel: 0
+
+Generated: 35 states
+Computation Time (user + system): 0.000000e+00 seconds
+State Generation of Exp2 on model SSGAgatensiBartolini finished at Wed Apr 23 09:29:34 UTC 2025.
+
+
+**********************************************************
+
+**********************************************************
+
+State Generation initiated on Exp3 of SSGAgatensiBartolini started at Wed Apr 23 09:29:34 UTC 2025 ...
+path=[/root/MobiusProject/Project/Transformer/SSGAgatensiBartolini/]
+License File=/tmp/mobius7616587184191316890license
+License Verified.
+The Global Variable values for experiment Experiment 3 are:
+lambda	double	0.01
+mu	double	0.0001
+SSG: SetTraceLevel: 0
+
+Generated: 35 states
+Computation Time (user + system): 8.100000e-04 seconds
+State Generation of Exp3 on model SSGAgatensiBartolini finished at Wed Apr 23 09:29:35 UTC 2025.
+
+
+**********************************************************
+
+**********************************************************
+
+State Generation initiated on Exp4 of SSGAgatensiBartolini started at Wed Apr 23 09:29:35 UTC 2025 ...
+path=[/root/MobiusProject/Project/Transformer/SSGAgatensiBartolini/]
+License File=/tmp/mobius8132626575323341583license
+License Verified.
+The Global Variable values for experiment Experiment 4 are:
+lambda	double	0.001
+mu	double	0.01
+SSG: SetTraceLevel: 0
+
+Generated: 35 states
+Computation Time (user + system): 9.400000e-04 seconds
+State Generation of Exp4 on model SSGAgatensiBartolini finished at Wed Apr 23 09:29:35 UTC 2025.
+
+
+**********************************************************
+
+**********************************************************
+
+State Generation initiated on Exp5 of SSGAgatensiBartolini started at Wed Apr 23 09:29:35 UTC 2025 ...
+path=[/root/MobiusProject/Project/Transformer/SSGAgatensiBartolini/]
+License File=/tmp/mobius1888760711870021476license
+License Verified.
+The Global Variable values for experiment Experiment 5 are:
+lambda	double	0.001
+mu	double	0.001
+SSG: SetTraceLevel: 0
+
+Generated: 35 states
+Computation Time (user + system): 9.000000e-04 seconds
+State Generation of Exp5 on model SSGAgatensiBartolini finished at Wed Apr 23 09:29:36 UTC 2025.
+
+
+**********************************************************
+
+**********************************************************
+
+State Generation initiated on Exp6 of SSGAgatensiBartolini started at Wed Apr 23 09:29:36 UTC 2025 ...
+path=[/root/MobiusProject/Project/Transformer/SSGAgatensiBartolini/]
+License File=/tmp/mobius6346083624447793010license
+License Verified.
+The Global Variable values for experiment Experiment 6 are:
+lambda	double	0.001
+mu	double	0.0001
+SSG: SetTraceLevel: 0
+
+Generated: 35 states
+Computation Time (user + system): 1.020000e-03 seconds
+State Generation of Exp6 on model SSGAgatensiBartolini finished at Wed Apr 23 09:29:37 UTC 2025.
+
+
+**********************************************************
+
+**********************************************************
+
+State Generation initiated on Exp7 of SSGAgatensiBartolini started at Wed Apr 23 09:29:37 UTC 2025 ...
+path=[/root/MobiusProject/Project/Transformer/SSGAgatensiBartolini/]
+License File=/tmp/mobius10148030928968398license
+License Verified.
+The Global Variable values for experiment Experiment 7 are:
+lambda	double	0.0001
+mu	double	0.01
+SSG: SetTraceLevel: 0
+
+Generated: 35 states
+Computation Time (user + system): 1.240000e-03 seconds
+State Generation of Exp7 on model SSGAgatensiBartolini finished at Wed Apr 23 09:29:37 UTC 2025.
+
+
+**********************************************************
+
+**********************************************************
+
+State Generation initiated on Exp8 of SSGAgatensiBartolini started at Wed Apr 23 09:29:37 UTC 2025 ...
+path=[/root/MobiusProject/Project/Transformer/SSGAgatensiBartolini/]
+License File=/tmp/mobius7698554735838354059license
+License Verified.
+The Global Variable values for experiment Experiment 8 are:
+lambda	double	0.0001
+mu	double	0.001
+SSG: SetTraceLevel: 0
+
+Generated: 35 states
+Computation Time (user + system): 8.100000e-04 seconds
+State Generation of Exp8 on model SSGAgatensiBartolini finished at Wed Apr 23 09:29:38 UTC 2025.
+
+
+**********************************************************
+
+**********************************************************
+
+State Generation initiated on Exp9 of SSGAgatensiBartolini started at Wed Apr 23 09:29:38 UTC 2025 ...
+path=[/root/MobiusProject/Project/Transformer/SSGAgatensiBartolini/]
+License File=/tmp/mobius2019683039184830663license
+License Verified.
+The Global Variable values for experiment Experiment 9 are:
+lambda	double	0.0001
+mu	double	0.0001
+SSG: SetTraceLevel: 0
+
+Generated: 35 states
+Computation Time (user + system): 8.800000e-04 seconds
+State Generation of Exp9 on model SSGAgatensiBartolini finished at Wed Apr 23 09:29:38 UTC 2025.
+

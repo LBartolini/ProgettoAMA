@@ -3,4 +3,19 @@
   <atomic key="CriticalSystemAgatensiBartolini">
     <value name="CriticalSystemAgatensiBartolini" type="SAN Model"/>
   </atomic>
+  <reward key="RewardVariablesAgatensiBartolini">
+    <value name="RewardVariablesAgatensiBartolini" category="Reward" type="Performance Variables Model"/>
+  </reward>
+  <study key="StudyAgatensiBartolini">
+    <value name="StudyAgatensiBartolini" category="Study" type="Set Study"/>
+  </study>
+  <transformer key="SSGAgatensiBartolini">
+    <value name="SSGAgatensiBartolini" category="Transformer" type="State Space Generator"/>
+  </transformer>
+  <solver key="DSSAgatensiBartolini">
+    <value name="DSSAgatensiBartolini" category="Solver" type="Direct Steady State Solver"/>
+  </solver>
+  <solver key="TRSAgatensiBartolini">
+    <value name="TRSAgatensiBartolini" category="Solver" type="Transient Solver"/>
+  </solver>
 </models:Project>

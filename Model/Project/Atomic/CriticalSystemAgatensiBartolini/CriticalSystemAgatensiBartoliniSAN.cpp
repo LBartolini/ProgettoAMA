@@ -72,7 +72,7 @@ CriticalSystemAgatensiBartoliniSAN::CriticalSystemAgatensiBartoliniSAN(){
 
   int AffectArcs[17][2]={ 
     {6,0}, {7,0}, {8,0}, {7,1}, {6,1}, {0,2}, {1,2}, {2,3}, {3,3}, 
-    {4,4}, {5,4}, {0,5}, {1,5}, {2,6}, {3,6}, {4,7}, {5,7}
+    {4,4}, {5,4}, {1,5}, {0,5}, {3,6}, {2,6}, {5,7}, {4,7}
   };
   for(int n=0;n<17;n++) {
     AddAffectArc(InitialPlaces[AffectArcs[n][0]],
@@ -80,8 +80,8 @@ CriticalSystemAgatensiBartoliniSAN::CriticalSystemAgatensiBartoliniSAN(){
   }
   int EnableArcs[20][2]={ 
     {6,0}, {0,0}, {2,0}, {4,0}, {7,1}, {0,1}, {2,1}, {4,1}, {0,2}, 
-    {2,3}, {4,4}, {1,5}, {7,5}, {1,6}, {3,6}, {7,6}, {1,7}, {3,7}, 
-    {5,7}, {7,7}
+    {2,3}, {4,4}, {1,5}, {7,5}, {3,6}, {1,6}, {7,6}, {5,7}, {1,7}, 
+    {3,7}, {7,7}
   };
   for(int n=0;n<20;n++) {
     AddEnableArc(InitialPlaces[EnableArcs[n][0]],
@@ -126,13 +126,13 @@ void CriticalSystemAgatensiBartoliniSAN::assignPlacesToActivitiesTimed(){
   A_Repair_T.A_F = (Place*) LocalStateVariables[1];
   A_Repair_T.Sys_F = (Place*) LocalStateVariables[7];
   A_Repair_T.A_W = (Place*) LocalStateVariables[0];
-  B_Repair_T.A_F = (Place*) LocalStateVariables[1];
   B_Repair_T.B_F = (Place*) LocalStateVariables[3];
+  B_Repair_T.A_F = (Place*) LocalStateVariables[1];
   B_Repair_T.Sys_F = (Place*) LocalStateVariables[7];
   B_Repair_T.B_W = (Place*) LocalStateVariables[2];
+  C_Repair_T.C_F = (Place*) LocalStateVariables[5];
   C_Repair_T.A_F = (Place*) LocalStateVariables[1];
   C_Repair_T.B_F = (Place*) LocalStateVariables[3];
-  C_Repair_T.C_F = (Place*) LocalStateVariables[5];
   C_Repair_T.Sys_F = (Place*) LocalStateVariables[7];
   C_Repair_T.C_W = (Place*) LocalStateVariables[4];
 }
@@ -167,8 +167,7 @@ bool a, b, c, d;
 a = (A_W -> Mark() == 0);
 b = (B_W -> Mark() == 0);
 c = (C_W -> Mark() == 0);
-d = (Sys_W -> Mark() == 1);
-return (d && (a || (b && c)));
+return (a || (b && c));
 return 0;
     }
 
@@ -197,8 +196,7 @@ int CriticalSystemAgatensiBartoliniSAN::Sys_Fail_TActivity::Rank(){
 }
 
 BaseActionClass* CriticalSystemAgatensiBartoliniSAN::Sys_Fail_TActivity::Fire(){
-  Sys_W -> Mark() = 0;
-Sys_F -> Mark() = 1;
+  ;
   (*(Sys_W_Mobius_Mark))--;
   UnRel -> Mark() = 1;
   (*(Sys_F_Mobius_Mark))++;
@@ -231,8 +229,7 @@ bool a, b, c, d;
 a = (A_W -> Mark() == 1);
 b = (B_W -> Mark() > 0);
 c = (C_W -> Mark() > 0);
-d = (Sys_F -> Mark() == 1)
-return (d && (a && (b || c)));
+return (a && (b || c));
 return 0;
     }
 
@@ -261,8 +258,7 @@ int CriticalSystemAgatensiBartoliniSAN::Sys_Restart_TActivity::Rank(){
 }
 
 BaseActionClass* CriticalSystemAgatensiBartoliniSAN::Sys_Restart_TActivity::Fire(){
-  Sys_F -> Mark() = 0;
-Sys_W -> Mark() = 1;
+  ;
   (*(Sys_F_Mobius_Mark))--;
   (*(Sys_W_Mobius_Mark))++;
   return this;
@@ -461,15 +457,12 @@ void CriticalSystemAgatensiBartoliniSAN::A_Repair_TActivity::LinkVariables(){
 
 bool CriticalSystemAgatensiBartoliniSAN::A_Repair_TActivity::Enabled(){
   OldEnabled=NewEnabled;
-  NewEnabled=((A_Enabling_RepairIP()));
+  NewEnabled=(((*(A_F_Mobius_Mark)) >=1)&&(A_Enabling_RepairIP()));
   return NewEnabled;
 }
 
     bool CriticalSystemAgatensiBartoliniSAN::A_Repair_TActivity::A_Enabling_RepairIP(){
-bool a, b;
-a = (Sys_F -> Mark() == 1);
-b = (A_F -> Mark() == 1);
-return (a && b);
+return (Sys_F -> Mark() == 1);
 return 0;
     }
 
@@ -504,8 +497,8 @@ int CriticalSystemAgatensiBartoliniSAN::A_Repair_TActivity::Rank(){
 }
 
 BaseActionClass* CriticalSystemAgatensiBartoliniSAN::A_Repair_TActivity::Fire(){
-  A_F -> Mark() = 0; # no need to check if there are token in A_F since it has already been checked in the input predicate
-A_W -> Mark() = 1;
+  ;
+  (*(A_F_Mobius_Mark))--;
   (*(A_W_Mobius_Mark))++;
   return this;
 }
@@ -522,24 +515,23 @@ CriticalSystemAgatensiBartoliniSAN::B_Repair_TActivity::~B_Repair_TActivity(){
 }
 
 void CriticalSystemAgatensiBartoliniSAN::B_Repair_TActivity::LinkVariables(){
-  A_F->Register(&A_F_Mobius_Mark);
   B_F->Register(&B_F_Mobius_Mark);
+  A_F->Register(&A_F_Mobius_Mark);
   Sys_F->Register(&Sys_F_Mobius_Mark);
   B_W->Register(&B_W_Mobius_Mark);
 }
 
 bool CriticalSystemAgatensiBartoliniSAN::B_Repair_TActivity::Enabled(){
   OldEnabled=NewEnabled;
-  NewEnabled=((B_Enabling_RepairIP()));
+  NewEnabled=(((*(B_F_Mobius_Mark)) >=1)&&(B_Enabling_RepairIP()));
   return NewEnabled;
 }
 
     bool CriticalSystemAgatensiBartoliniSAN::B_Repair_TActivity::B_Enabling_RepairIP(){
-bool a, b, c;
+bool a, b;
 a = (Sys_F -> Mark() == 1);
 b = (A_F ->Mark() == 0);
-c = (B_F ->Mark() > 0);
-return (a && b && c);
+return (a && b);
 return 0;
     }
 
@@ -574,8 +566,8 @@ int CriticalSystemAgatensiBartoliniSAN::B_Repair_TActivity::Rank(){
 }
 
 BaseActionClass* CriticalSystemAgatensiBartoliniSAN::B_Repair_TActivity::Fire(){
-  B_F -> Mark()--;
-B_W -> Mark()++;
+  ;
+  (*(B_F_Mobius_Mark))--;
   (*(B_W_Mobius_Mark))++;
   return this;
 }
@@ -592,26 +584,25 @@ CriticalSystemAgatensiBartoliniSAN::C_Repair_TActivity::~C_Repair_TActivity(){
 }
 
 void CriticalSystemAgatensiBartoliniSAN::C_Repair_TActivity::LinkVariables(){
+  C_F->Register(&C_F_Mobius_Mark);
   A_F->Register(&A_F_Mobius_Mark);
   B_F->Register(&B_F_Mobius_Mark);
-  C_F->Register(&C_F_Mobius_Mark);
   Sys_F->Register(&Sys_F_Mobius_Mark);
   C_W->Register(&C_W_Mobius_Mark);
 }
 
 bool CriticalSystemAgatensiBartoliniSAN::C_Repair_TActivity::Enabled(){
   OldEnabled=NewEnabled;
-  NewEnabled=((C_Enabling_RepairIP()));
+  NewEnabled=(((*(C_F_Mobius_Mark)) >=1)&&(C_Enabling_RepairIP()));
   return NewEnabled;
 }
 
     bool CriticalSystemAgatensiBartoliniSAN::C_Repair_TActivity::C_Enabling_RepairIP(){
-bool a, b, c, d;
+bool a, b, c;
 a = (Sys_F -> Mark() == 1);
 b = (A_F ->Mark() == 0);
 c = (B_F ->Mark() == 0);
-d = (C_F ->Mark() > 0);
-return (a && b && c && d);
+return (a && b && c);
 return 0;
     }
 
@@ -646,8 +637,8 @@ int CriticalSystemAgatensiBartoliniSAN::C_Repair_TActivity::Rank(){
 }
 
 BaseActionClass* CriticalSystemAgatensiBartoliniSAN::C_Repair_TActivity::Fire(){
-  C_F -> Mark()--;
-C_W -> Mark()++;
+  ;
+  (*(C_F_Mobius_Mark))--;
   (*(C_W_Mobius_Mark))++;
   return this;
 }

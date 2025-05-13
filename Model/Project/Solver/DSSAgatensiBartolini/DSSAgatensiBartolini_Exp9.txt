@@ -7,7 +7,7 @@ Copyright (c) William H. Sanders and Univ. of Illinois 1994-2010
                      DIRECT STEADY STATE SOLVER RESULTS
 ******************************************************************************
 
-Started: Wed Apr 23 09:20:34 2025
+Started: Tue May 13 12:34:55 2025
 
 Project name: Project
 Study name: StudyAgatensiBartolini
@@ -24,9 +24,9 @@ Tolerance: 1.000000e-03
 Stability: 0
 Rows: 0
 
-Computation Time (seconds): 0.000904
-User Time (seconds): 0.000873
-System Time (seconds): 0.000031
+Computation Time (seconds): 0.000878
+User Time (seconds): 0.000176
+System Time (seconds): 0.000702
 ******************************************************************************
 Performance variable :  Availability
 Mean                 :  2.142857e-01
@@ -34,5 +34,5 @@ Variance             :  1.683673e-01
 Plot files    (pdf)  :  Exp9.dss.Availability.pdf.splot
               (cdf)  :  Exp9.dss.Availability.cdf.splot
 DSSSolver done
-Finished: Wed Apr 23 09:20:34 2025
+Finished: Tue May 13 12:34:55 2025
 

@@ -13,10 +13,10 @@
 				</class>
 				<string id="PlotTemplate"></string>
 			</class>
-			<long id="StoppingCriterion">0</long>
+			<long id="StoppingCriterion">9</long>
 			<long id="Rows">0</long>
 			<long id="Stability">0</long>
-			<double id="Tolerance">0.0</double>
+			<double id="Tolerance">0.001</double>
 			<long id="Verbosity">0</long>
 			<boolean id="PlotCompState">false</boolean>
 			<boolean id="RunInBackState">false</boolean>
